@@ -6,6 +6,7 @@ Feature: Shop products at Amazon
     Given Open amazon page
     When Search for books
     Then Click on search button
+    Then Verify Correct product is searched
 
   Scenario: Multiple2 Amazon Search
     Given Open amazon page

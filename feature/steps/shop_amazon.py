@@ -13,6 +13,11 @@ def search_book(context):
     context.app.main_page.search_items('books')
 
 
+@then("Verify Correct product is searched")
+def verify_product(context):
+    context.app.main_page.verify_items()
+
+
 @when("Search for {arg0}")
 def search_items(context, arg0):
     context.app.main_page.search_items(arg0)
