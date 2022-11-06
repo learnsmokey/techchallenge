@@ -10,7 +10,6 @@ class MainPage(Page):
     FIND_BUTTON = (By.XPATH, "//input[@id='nav-search-submit-button']")
     VERIFY_PRODUCT = (By.XPATH, "//img[@alt='Books%20at%20Amazon']")
 
-
     def open_amazon_website(self):
         self.open_page(url="https://www.amazon.com/")
 

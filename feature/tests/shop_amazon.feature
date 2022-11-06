@@ -7,6 +7,7 @@ Feature: Shop products at Amazon
     When Search for books
     Then Click on search button
     Then Verify Correct product is searched
+    Then Search for peppa pig
 
   Scenario: Multiple2 Amazon Search
     Given Open amazon page
@@ -30,4 +31,14 @@ Feature: Shop products at Amazon
     When Search item Kettle
     When Search item Pen
     When Search item Toy
-#    Then Click on search button
+    Then Click on search button
+
+   Scenario Outline: Multiple1 Amazon search
+     Given Open amazon page
+     When Search item <search item>
+     Then Click on search button
+     Examples:
+        | search item |
+        | kettle      |
+        | pen         |
+        | toy         |

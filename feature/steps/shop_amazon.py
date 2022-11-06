@@ -43,3 +43,8 @@ def search_items(context, arg0):
 def search_button(context):
     context.app.main_page.search_button()
     time.sleep(2)
+
+
+@then("Search for peppa pig")
+def step_impl(context):
+    context.app.main_page.search_items('peppa pig')
