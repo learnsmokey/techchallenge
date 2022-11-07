@@ -7,7 +7,7 @@ Feature: Shop products at Amazon
     When Search for books
     Then Click on search button
     Then Verify Correct product is searched
-    Then Search for peppa pig
+#    Then Search for peppa pig
 
   Scenario: Multiple2 Amazon Search
     Given Open amazon page
